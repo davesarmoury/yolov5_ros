@@ -1,0 +1,14 @@
+<launch>
+
+  <node name="adjuster" pkg="yolov5_ros" type="resize.py" output="screen">
+    <!-- remap from="~input" to="/needed_topic"/-->
+    <!-- remap from="~output" to="/needed_topic"/-->
+    <!-- param name="~/resolution" value="416" /-->
+    <!-- param name="~/crop" value="true" /-->
+  </node>
+  <node name="detector" pkg="yolov5_ros" type="detect_ros.py" output="screen">
+    <!--remap from="~input" to="/needed_topic"/-->
+    <!--remap from="~output" to="/needed_topic"/-->
+    <!-- param name="~/weights" value="" /-->
+  </node>
+</launch>

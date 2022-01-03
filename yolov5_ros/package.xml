@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>yolov5_ros</name>
+  <version>0.0.0</version>
+  <description>The yolov5_ros package</description>
+
+  <maintainer email="davesarmoury@gmail.com">Dave Niewinski</maintainer>
+
+  <license>CC-BY-3</license>
+
+  <buildtool_depend>catkin</buildtool_depend>
+  <exec_depend>yolov5_msgs</exec_depend>
+
+</package>
